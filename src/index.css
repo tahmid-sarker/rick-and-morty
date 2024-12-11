@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: night --default;
+ }
+
+:root {
+  --color-primary: #9DFE00;
+  --color-secondary: #14D9E6;
+}
+
+* {
+  font-family: 'TT Travels', sans-serif;
+}
+
+button:not(:disabled),
+a[href],
+[role="button"] {
+  cursor: pointer;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
